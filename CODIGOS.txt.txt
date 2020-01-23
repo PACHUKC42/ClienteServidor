@@ -1,0 +1,43 @@
+C A R A C T E R E S
+char c = evt.getKeyChar();
+        if (Character.isDigit(c) == false) {
+        }else{
+            evt.consume();
+        }
+        if (jTextField1.getText().length()== 10) {
+
+         evt.consume(); 
+    } 
+
+
+
+
+
+ N U M E R O S Y 99
+char c = evt.getKeyChar();
+        if (Character.isLetter(c) == false) {
+        }else{
+            evt.consume();
+        }
+        if (jTextField1.getText().length()== 2) {
+
+         evt.consume(); 
+        }
+
+
+
+
+
+C O R R E O
+String emai= jTextField1.getText();
+        if(emai.contains("@")&&emai.contains(".")){
+           int pa=emai.indexOf("@");
+           int pp=emai.indexOf(".");
+            if (pa<pp) {
+                jLabel4.setText("valido");
+            }else{
+                jLabel4.setText("no valido");
+            }
+        }else{
+            jLabel4.setText("no valido");
+        }
